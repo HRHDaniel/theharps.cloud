@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Introduction to my home setup"
+date:   2023-03-03 11:50:20 -0600
+categories: home automation
+---
+As of the start of this blog, here's the list of projects I have currently running.
+
+- [Proxmox VE](https://www.proxmox.com/en/proxmox-ve) hosts my home assistant VM, as well as a variety of VMs and containers for testing and development.
+- DNS: I have a couple of domains purchased, but the one of interest is `theharps.cloud` which I use primarily internal to my home network.  I have this domain configured on my gateway so that I can simply address things like `proxmox.theharps.cloud` on my network.  Sure, I could do that without purchasing the domain since I only allow most of those to be resolved internally, but by owning the domain I'm able to create SSL certificates so even internally to my network I'm using SSL signed by a trusted CA rather than dealing with self signed certificates.
+- SSL Certificates / [acme.sh](https://github.com/acmesh-official/acme.sh) is used to create my certificate(s).  Actually, they didn't support my registrar, so I ended up writing that integration.  Pull request is pending
+- [Home Assistant](https://www.home-assistant.io/) Used as the basis for my home automation, integrated with:
+  - Various ZWave and Zigbee devices
+  - Various Tuya Devices
+  - A couple of LG appliances
+  - A roborock vacuum
+  - Video doorbell
+  - Ecobee thermostat
+  - Shelly1 to control a dumb garage door
+- QNAP NAS: Storage, NVR with several ReoLink cameras, and Docker host.
+- OSMC on a raspberry PI connected to my living room TV.
+- Unifi USG, managed switch and wifi.  Of particular interest was being able to separate multiple VLANs. For instance I have a VLAN dedicated to my cameras which is blocked altogether from connecting to the internet to ensure we aren't leaking camera streams to the world. I have a guest WiFi/VLAN that provides internet to family/friends devices when they're visiting but isolates those devices from each other and the rest of my equipment.
+  
