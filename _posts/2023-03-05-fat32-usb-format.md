@@ -2,6 +2,7 @@
 layout: post
 title:  "Formatting a USB drive to FAT32"
 date:   2023-03-05 10:00:00 -0600
+img: usb-gf7d99f15b_1920.jpg
 ---
 Just had a need arise requiring a reformat of a USB stick to FAT32.  Easy enough - I stuck it in the PC and right clicked on the drive in explorer and selected format. Now I am annoyed because FAT32 isn't an option:
 

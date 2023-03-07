@@ -45,14 +45,14 @@ gulp.task('sass', function () {
 
 // Compression images
 gulp.task('img', function() {
-	return gulp.src('assets/img/**/*')
+	return gulp.src('imgs/**/*')
 		.pipe(cache(imagemin({
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-    .pipe(gulp.dest('_site/assets/img'))
+    .pipe(gulp.dest('_site/imgs'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -60,7 +60,7 @@ gulp.task('img', function() {
 gulp.task('watch', function () {
     gulp.watch('assets/css/scss/**/*.scss', ['sass']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
-    gulp.watch('assets/img/**/*', ['img']);
+    gulp.watch('imgs/**/*', ['img']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
