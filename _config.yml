@@ -19,7 +19,7 @@ social-email: blog@theharps.cloud # add your Email address
 
 # Trackers
 # googleanalytics: # Google Analytics
-site.woopraanalytics: true
+woopraanalytics: true
 
 # Build Settings
 markdown: kramdown
