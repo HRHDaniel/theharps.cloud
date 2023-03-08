@@ -17,8 +17,9 @@ social-email: blog@theharps.cloud # add your Email address
 # Disqus
 # discus-identifier: mr-brown # add your discus identifier
 
-# Tracker
-# analytics: # Google Analytics
+# Trackers
+# googleanalytics: # Google Analytics
+site.woopraanalytics: true
 
 # Build Settings
 markdown: kramdown
