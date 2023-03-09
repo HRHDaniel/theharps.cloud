@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Home Assistant installation"
+title:  "Home Assistant Installation"
+subtitle: "Part 1: base installation"
 date:   2023-03-08 10:00:00 -0600
 img: home-assistant-banner-logo.png
 thumb: home-assistant-logo.png
