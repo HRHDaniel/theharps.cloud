@@ -19,7 +19,7 @@ The **"HomeKit"** integration allows broadcasting your Home Assistant entities t
 
 The **"HomeKit Controller"** integration has Home Assistant acting as the HomeKit hub so that it can control HomeKit devices. In my case, I want Home Assistant to control the Ecobee thermostat, so it needs to act as the hub.
 
-On the Ecobee enable HomeKit pairing. It will display a pairing key to enter in Home Asstistan when adding the "HomeKit Controller" integration.
+On the Ecobee enable HomeKit pairing. It will display a pairing key to enter in Home Assistant when adding the "HomeKit Controller" integration.
 
 On my Dashboard, I display a card grid with the following configuration:
 ```yaml
